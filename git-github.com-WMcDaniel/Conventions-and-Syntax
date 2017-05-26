@@ -1,0 +1,9 @@
+Conventions-and-Syntax It is just how you write code. Like how we use punctuation in the english language.
+Every ! . ; , = etc has its own purpose.
+
+; is used to end statements
+. is used to as a full stop
+indenting is just used to read your code easier
+comments are just used to leave yourself notes, or you can also use it to disable code for a period of time.
+// or /* */
+= and != test for equality and inequality of any type
