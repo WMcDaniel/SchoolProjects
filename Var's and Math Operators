@@ -1,0 +1,49 @@
+
++ 	Adds two operands
+- 	Subtracts second operand from the first 	
+/ 	Divides numerator by de-numerator 	
+* 	Multiplies both operands
+% 	Modulus Operator and remainder of after an integer division 	
+++ 	Increment operator increases integer value by one 	
+-- 	Decrement operator decreases integer value by one 	
+
+int x = 55;
+int y = 25;
+Console.WriteLine(x-y);
+//Output 30
+
+int x = 15 / 3;
+Console.WriteLine(x);
+// Outputs 5
+
+int x = 30 % 9;
+Console.WriteLine(x);
+// Outputs 3
+
+int x = (7 + 5) *2;
+Console.WriteLine(x);
+// Outputs 24
+
+int x = 4+3*5;
+Console.WriteLine(x);
+// Outputs 19
+
+some example of variables
+  int is used to determin a whole  number in your code - 
+int MyInt = 5;
+  Strings are for any characters - 
+
+String original = "abc";
+Console.WriteLine(original);
+
+  Bool's are always true or false 
+bool hitPoints = true;
+if (hitPoints = 0)
+Console.WriteLine ("you have died");
+
+  float is a number with a decimal -
+float f = 4.5F;
+
+  double is a big number with a decimal
+double r = 14124412212.32;
+
