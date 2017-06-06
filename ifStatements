@@ -1,3 +1,8 @@
+            // If statements checks a condition if that condition is met that it does whatever is in that code block.
+            // if the first statement isn't true then it goes onto the next and then the next, if none of them are true
+            it will do the else statement.
+
+
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,7 +26,9 @@ namespace ifIfelse
             Console.WriteLine("Goto the Potion Shop (4)");
             Console.WriteLine("Goto the Church (5)");
             Console.WriteLine("Goto the Graveyard (6)");
+            Console.WriteLine("Speak with Greybeard (7)");
             string result = Console.ReadLine();
+            
             if (result == "1")
             {
                 playerAlive = true;
@@ -43,22 +50,41 @@ namespace ifIfelse
             
                   if(result == "5")
             {
-                Console.WriteLine("As you enter the holy Chaple a sence of calm rushes over you.");
+                Console.WriteLine("As you enter the holy Chaple a sense of calm rushes over you.");
             }
             
                   if(result == "6")
             {
                 Console.WriteLine("The cemetary has a cold and quite feel about it.");
             }
+             if(result == "7")
+            {
+                Console.WriteLine("Hello young knight, what can I do for you?");
+                }
+                
                   else // asks you to try again if options 1-6 are false.
                   {
                       Console.WriteLine("Please try again");
                  
                   }
-            
+           
 
         }
-
-
+        void StopLight(int status) 
+        {
+        if(status == 1)
+        {
+        Console.WriteLine("The light is green, GO!");
+        }
+        else if(status == 2)
+        {
+        Console.WriteLine("The light is yellow, start to slow down!");
+        }
+        else
+        {
+        Console.WriteLine("The light is red, STOP!");
+        }
+        
+        }
     }
 }
