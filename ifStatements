@@ -1,0 +1,64 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ifIfelse
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int hp = 10;
+            int damage = 1;
+            int str = 1;
+            bool playerAlive = true;
+            Console.WriteLine("What do you want to do?");
+            Console.WriteLine("Check Player Status (1)");
+            Console.WriteLine("Find Enemy (2)");
+            Console.WriteLine("Goto the Store (3)");
+            Console.WriteLine("Goto the Potion Shop (4)");
+            Console.WriteLine("Goto the Church (5)");
+            Console.WriteLine("Goto the Graveyard (6)");
+            string result = Console.ReadLine();
+            if (result == "1")
+            {
+                playerAlive = true;
+                Console.WriteLine("Player is alive and has {0} hitpoints.", hp);
+            }
+            if (result == "2")
+            {
+                Console.WriteLine("you found an Enemy prepare to fight!")
+                Console.WriteLine("you had to run away becuase you have not written the class for enemy");
+            }
+            if(result == "3")
+            {
+                Console.WriteLine("you find a random store along the street");
+            }
+                  if(result == "4")
+            {
+                Console.WriteLine("You have entered the Potion Shop and smell something quite foul.");
+            }
+            
+                  if(result == "5")
+            {
+                Console.WriteLine("As you enter the holy Chaple a sence of calm rushes over you.");
+            }
+            
+                  if(result == "6")
+            {
+                Console.WriteLine("The cemetary has a cold and quite feel about it.");
+            }
+                  else // asks you to try again if options 1-6 are false.
+                  {
+                      Console.WriteLine("Please try again");
+                 
+                  }
+            
+
+        }
+
+
+    }
+}
