@@ -1,0 +1,36 @@
+Arrays are containers with the same variable types. int, floats,gameobjects, etc
+
+public class Arrays : MonoBehaviour {
+
+    int[] myIntArray = { 5, 55, 3, 943, 404 };
+    int[] numbersArray = { 3, 12, 42, 55, 111, 230 };
+    float[] myFloatArray = { 5.44, 3.2, 77.4, 3.322, 102.5 };
+    float[] speedFloatArray = { 3.33, 6.66, 9.99, 14.9 };
+    GameObject[] myEnemiesArray = { spider, slime, snake, croc, mimic, troll };
+    GameObject[] myCrateArray = { knife, AK - 47ammo, Pistol, Armor, Meat };
+    GameObject[] dragonLootArray = { claw, horn, dragoncloak, redscale, dragoneye };
+    string[] namesArray = ( "Ted", "Bill", "Tom", "Peter", "Paul", "Jeff" );
+    string[] enemyNameArray = { "goblin", "troll", "kobold", "minotaur", "centuar" };
+    string[] weaponArray = { "sword", "hammer", "axe", "bow", "spear" };
+
+    Random.Range(0, 5);
+
+    public GameObjects[] players;
+
+	// Use this for initialization
+	void Start () {
+
+    players = GameObject.FindGameObjectsWithTag("Player");
+
+       for(int i = 0; i < players.Length; i++)
+        {
+            Debug.Log("Player Number "+i+" is named " + players[i].name);
+        }
+
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	
+	}
+}
