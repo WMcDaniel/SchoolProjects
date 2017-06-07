@@ -1,0 +1,39 @@
+// switch statements are used when you want to compare a variable to a constant.
+  much like else If statements just a bit simpler and easier to read
+
+  static void ShowWeapon (int weaponChoice)
+  {
+   switch (weaponChoice)
+   {
+    case 1:
+       Console.Writeline ("You've chosen Sword, stick them with the point end!");
+    break;
+    case 2:
+       Console.Writeline ("Axe");
+    break;
+    case 3:
+       Console.Writeline ("Hammer Time!");
+    break;
+    case 4:
+       Console.Writeline ("Spear");
+    break;
+    case 5:
+        Console.Writeline ("Flail");
+    break;
+    case 6:
+       Console.Writeline ("Bow");
+    break;
+    case 7:
+        Console.Writeline ("Torch");
+    break;
+    case 8:
+        Console.Writeline ("Boomerang");
+    break;
+    case 9:
+       Console.Writeline ("Crossbow");
+    break;
+    default: // any other weapon
+       Conesole.WriteLine ("Bare  Fists");
+    break;
+      }
+   }   
