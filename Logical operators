@@ -1,0 +1,35 @@
+public class Turtle : MonoBehaviour {
+
+public double bloodTemp = 33.3;
+    public double bloodTemp2 = 111.11;
+    public bool shell = true;
+    public int armor = 10;
+    
+          //Logical operators used to check to see if multiple functions is true or false using AND OR NOT 
+          
+    // Use this for initialization
+    void Start () {
+    
+//and statement
+
+        if (shell && armor = 10)
+        {
+            print("Shield is fully operational");
+        }
+        if (armor > 0 && shell)
+        {
+            print("Shell needs some repair");
+        }
+        
+  //false statement
+  
+        if (!bloodTemp < 33.3 && bloodTemp2 > 111.11)
+        {
+                print("This turtle is too cold or hot to go on living");
+        }
+            if (bloodTemp <= 33.3 && bloodTemp2 >= 111.11)
+            {
+                print("This turtle is living creature");
+            }
+	}
+}
