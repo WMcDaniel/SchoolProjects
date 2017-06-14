@@ -1,0 +1,33 @@
+using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
+
+public class Lists : MonoBehaviour {
+
+    public List<string> players = new List<string>();
+    string thing;
+
+    public void ClickHere(string _s)
+
+    {
+        players.Add(_s);
+    }
+
+    public void RunLoop()
+
+    {
+        foreach (string item in players)
+        {
+            print(item);
+        }
+
+        if (players.Count != 1)
+        {
+            print("you have" + players.Count + " player.");
+        }
+        else
+        {
+            print("you have" + players.Count + " player.");
+        }
+    }
+}
